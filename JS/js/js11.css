@@ -1,0 +1,43 @@
+.h11{
+    width: 350px;
+    height: 350px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin:  50px auto;
+}
+label{
+    display: block;
+    margin-bottom: 90%;
+}
+.h22{
+    padding: 20px;
+    display: block;
+    background-color:aqua;
+    text-align: center;
+    width: 100px;
+    height: 5px;
+    margin: auto;
+}
+.h33{
+   position: relative; 
+   display: flex;
+   justify-content: space-between;
+   
+}
+.h33::before{
+    content: * *;
+    position: absolute;
+    top: 50%;
+    height: 4px;
+    width: 100px;
+    transform: trabslator(-50%);
+
+}
+.h44{
+    width: 35px;
+    height: 35px;
+    background-color: gray;
+    border-radius: 50%;
+
+}

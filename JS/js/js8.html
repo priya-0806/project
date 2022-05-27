@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <script type="text/javascript">
+        function validate(){
+            var name=document.myform.n1.value;
+            var password=document.myform.t2.value;
+            var status=false;
+        
+        if(name==""){
+            document.getElementById("name location").innerHTML="please enter ur name"
+            status=false;
+            
+        }
+        else{
+            document.getElementById("name location").innerHTML=" "
+            status=true;
+        }
+        if(password==""){
+            document.getElementById("password location").innerHTML="please enter ur password"
+            status=false;
+            
+        }
+        else{
+            document.getElementById("password location").innerHTML=" "
+            status=true;
+        }
+        return status;
+    }
+    </script>
+    <body>
+        
+       
+        <h1>
+            Registration Form
+        </h1>
+        <form name="myform" onsubmit="return validate()">
+       
+       
+       
+        <table>
+           
+        <tr>
+            <td> <label for="name">name </label>
+                <input type="text" name="n1">
+        
+            <span id="name location" style="color:darksalmon"> </span> </td>  
+        </tr>
+         <br>
+        <tr>
+            <td> <label for="password"> password </label>
+                <input type="text" name="t2">
+        
+            <span id="password location" style="color:aqua"></span> </td> 
+         </tr>
+        
+        
+    
+
+        </table>
+        <input type="submit" value="Register">
+    </form>
+       
+
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <script>
+        function validateform(){
+            var name=document.myform.n1.value;
+            var password=document.myform.t2.value;
+            if (name==null||name==""){
+                alert("Give a proper name");
+                return false;
+
+            }
+            else if (password.length<10){
+                alert("Password must be less than 10 ");
+                return false;
+            }
+
+
+
+
+            }
+
+    </script>
+   
+    <body>
+        <h1>
+            Registration Form
+        </h1>
+        <form name="myform" onsubmit="return validateform()">
+        Name: <input type="text" name="n1" > <br>
+        Password: <input type="password" name="t2"> <br/>
+        
+        <input type="submit" value="Register">
+        
+    
+
+        </form>
+       
+
+    </body>
+</html>

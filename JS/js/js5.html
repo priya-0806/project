@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button  onclick="bigColor()"> Change color </button>
+        <button  onclick="changeColor()"> Change text </button><br>
+        <h1 id="txt1"> This is a javascript </h1>
+        <script>
+             function bigColor() {
+                var a = ["gold","yellow","blue","green","pink"];
+                var r = Math.floor(Math.random() * 5)
+                var color = a[r]
+                
+                document.body.style.backgroundColor =color
+
+   }	
+            function changeColor() {
+                var a = ["gold","yellow","blue","green","pink","violet"];
+                var r = a[Math.floor(Math.random() * 6)]
+                alert(r)
+            
+                document.getElementById("txt1").style.color= r
+
+
+   }
+   
+       </script>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <link rel="stylesheet" type="text/css" href="js12.css">
+    <script type="text/javascript">
+        function validate(){
+            var num1=document.myform.n1.value;
+            var num2=document.myform.n2.value;
+            var num3=document.myform.n3.value;
+            var num4=document.myform.n4.value;
+            var num5=document.myform.n5.value;
+            var num6=document.myform.n6.value;
+            var num7=document.myform.n7.value;
+            var status=true;
+
+         if(num1==""||num1==null){
+             document.getElementById("name location").innerHTML="Enter ur name";
+             status=false;
+         }
+         else{
+            document.getElementById("name location").innerHTML=" "
+         }
+         if(num2==""||num2==null){
+             document.getElementById("dob location").innerHTML="Enter ur valid DOB"
+             status=false;
+         }
+         else{
+            document.getElementById("dob location").innerHTML=" "
+         }
+         if(num3==""||num3==null){
+             document.getElementById("num location").innerHTML="Enter ur Mobile number"
+             status=false;
+         }
+         else{
+            document.getElementById("num location").innerHTML=" "
+         }
+         if(num4==""||num4==null){
+             document.getElementById("doj location").innerHTML="Mention ur date of journey"
+             status=false;
+         }
+         else{
+            document.getElementById("doj location").innerHTML=" "
+         }
+         if(num5==""||num5==null){
+             document.getElementById("check location").innerHTML="Mention ur defence"
+             status=false;
+         }
+         else{
+            document.getElementById("check location").innerHTML=" "
+         }
+         if(num6==""||num6==null){
+             document.getElementById("fix location").innerHTML="select ur checkbox"
+             status=false;
+         }
+         else{
+            document.getElementById("fix location").innerHTML=" "
+         }
+         
+         if(num7==""||num7==null){
+             document.getElementById("tickets location").innerHTML="Mention ur count of tickets"
+             status=false;
+         }
+         else{
+            document.getElementById("tickets location").innerHTML=" "
+         }
+        return status;  
+        }
+        
+        
+    </script>
+    <body class="h11">
+        <h1 align="center"> Reservation Form </h1>
+        <form name="myform" method="post" onsubmit="return validate()">
+            <table> 
+                <tr>
+                    <td> <label for="name"> Name </label></td>
+                    <td> <input type="text" name="n1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br>
+                     <span id="name location" style="color: brown;"></span></td>
+                    <td> <label for="dob"> Date Of Birth</label></td>
+                    <td> <input type="date" name="n2"></br>
+                     <span id="dob location" style="color: brown;"></span></td>
+                </tr> 
+                <tr>
+                    <td> <label for="num"> Mobile Number </label></td>
+                    <td> <input type="text" name="n3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </br>
+                    <span id="num location" style="color: brown;"></span></td>
+                    <td> <label for="doj"> Date Of Journey</label></td>
+                    <td> <input type="date" name="n4"></br>
+                     <span id="doj location" style="color: brown;"></span></td>
+                </tr>           
+                <tr> 
+                    <td><label for="check"> Defence</label></td>
+                    <td> <input type="radio" name="n5">yes
+                     <input type="radio" name="n5">No</br>
+                      <span id="check location" style="color: brown;"></span></td>
+                </tr>
+                <tr>
+                    <td> <label for="fix"> Sports</label></td>
+                    <td> <input type="checkbox" name="n6"> Swimming
+                        <input type="checkbox" name="n6"> Atheletic
+                        <input type="checkbox" name="n6"> Others &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</br>
+                     <span id="fix location" style="color: brown;"></span></td>                         
+                    <td> <label for="tickets"> No of Tickets</label></td>
+                    <td> <input type="text" name="n7"></br>
+                    <span id="tickets location" style="color: brown;"></span></td>
+                    
+                </tr>
+                <tr>
+                    <td> <label for="decide"> Train Class</label></td>
+                    <td> <select> 
+                        <option> select</option>
+                        <option> 1AC</option>
+                        <option> 2AC</option>
+                        <option> 3AC</option>
+                        <option> SL</option> 
+                    </select>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</br>
+                    <span id="decide location" style="color: brown;"></span></td>
+                    <td> <label for="pnr"> PNR No:</label></td>
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td> <label for="amount"> Total amount:</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colsapn="2" align="right"> <input type="submit" value="Book">&nbsp; &nbsp; &nbsp;</td>
+                    <td  colspan="2" align="left"> <input type="reset" value="Cancel"> </td>
+                </tr>
+               
+
+            </table>
+            
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <link rel="stylesheet" type="text/css" href="js9.css">
+    <script type="text/javascript">
+        function validate(){
+            var name=document.myform.n1.value;
+            var name1=document.myform.n2.value;
+            var name2=document.myform.n3.value;
+            var pass=document.myform.t1.value;
+            var cpass=document.myform.t2.value;
+            var status=true;
+        
+        if(name==""|| name==null){
+            document.getElementById("name location").innerHTML="please enter ur name"
+            status=false;
+            
+        }
+        else{
+            document.getElementById("name location").innerHTML=" "
+
+           
+            
+        }
+        
+        if(name1==""|| name1==null){
+            document.getElementById("lname location").innerHTML="please enter ur last name"
+            status=false;
+            
+        }
+        else{
+            document.getElementById("lname location").innerHTML=" "
+          
+        }
+        if(name2=="" ||name2==null){
+            document.getElementById("uname location").innerHTML="please enter ur user name"
+            status=false;
+            
+        }
+        else{
+            document.getElementById("uname location").innerHTML=" "
+            
+        }
+        if(pass==""){
+            document.getElementById("password location").innerHTML="please enter ur password"
+            status=false;
+            
+        }
+        else{
+            document.getElementById("password location").innerHTML=" "
+          
+        }
+        if(cpass==""){
+            document.getElementById("cpassword location").innerHTML="enter ur confirm password"
+            status=false;
+            
+        }
+        
+        if(pass!=cpass){
+            document.getElementById("cpassword location").innerHTML="it should be match with ur password"
+            status=false;
+
+        }
+        return status;
+    }
+    </script>
+    <body class="h11">
+        
+       
+        <h1>
+            Registration Form
+        </h1>
+        <form name="myform" onsubmit="return validate()">
+        <table>
+            <tr>
+            <td> <label for="name" required>first name </label></td>
+            <td> <input type="text" name="n1"></td>
+        
+            <td><span id="name location" style="color:brown"> </span> </td>  
+        </tr>
+         <br>
+        <tr>
+            <td> <label for="lname"> last name </label></td>
+            <td> <input type="text" name="n2"></td>
+        
+             <td><span id="lname location" style="color:brown"></span> </td> 
+         </tr>
+         <tr>
+            <td> <label for="uname"> user name </label></td>
+            <td> <input type="text" name="n3"></td>
+        
+             <td><span id="uname location" style="color:brown"></span> </td> 
+         </tr>
+         <tr>
+            <td> <label for="mail"> mail id</label></td>
+            <td> <input type="email" name="n4"></td>
+        
+            <td><span id="mail location" style="color:brown"></span> </td> 
+         </tr>
+         <tr>
+            <td> <label for="password"> password</label></td>
+            <td> <input type="password" name="t1"></td>
+        
+            <td><span id="password location" style="color:brown"></span> </td> 
+         </tr>
+         <tr>
+            <td> <label for="cpassword"> confirm password</label></td>
+            <td> <input type="password" name="t2"></td>
+        
+            <td><span id="cpassword location" style="color:brown"></span> </td> 
+         </tr>
+         </table>
+        <input type="submit" value="Register">
+    </form>
+       </body>
+</html>
