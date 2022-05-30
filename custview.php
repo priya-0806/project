@@ -36,11 +36,7 @@ include 'connection.php';
                     <th>City</th>
                     <th>State</th>
                     <th>Pincode</th>
-                    
-                    
-            
-           
-            </tr>
+                     </tr>
     <?php
     if($res=mysqli_query($con,$sql)){
         if(mysqli_num_rows($res)>0){
